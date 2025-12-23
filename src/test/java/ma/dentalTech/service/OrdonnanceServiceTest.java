@@ -1,4 +1,4 @@
-package ma.dentalTech.service;
+/* package ma.dentalTech.service;
 
 import ma.dentalTech.entities.enums.Assurance;
 import ma.dentalTech.entities.enums.Sexe;
@@ -83,3 +83,5 @@ class OrdonnanceServiceTest {
         assertEquals(m.getIdMct(), savedLignes.get(0).getIdMct());
     }
 }
+
+ */

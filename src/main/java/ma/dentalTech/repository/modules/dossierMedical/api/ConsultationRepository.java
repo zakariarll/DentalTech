@@ -9,9 +9,6 @@ import java.util.Optional;
 
 public interface ConsultationRepository extends CrudRepository<Consultation, Long> {
 
-    // Retrouver la consultation liée à un RDV précis
     Optional<Consultation> findByRDVId(Long idRDV);
-
-    // Consultations d'un jour donné
     List<Consultation> findByDate(LocalDate date);
 }

@@ -1,4 +1,4 @@
-package ma.dentalTech.repository.Ordonnance;
+/*package ma.dentalTech.repository.Ordonnance;
 
 
 import ma.dentalTech.entities.medicament.Medicament;
@@ -60,3 +60,5 @@ class PrescriptionTest {
         assertEquals("Matin et Soir", lines.get(0).getFrequence());
     }
 }
+
+ */

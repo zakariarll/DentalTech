@@ -42,8 +42,33 @@ public class ConsultationRepositoryImpl implements ConsultationRepository {
 
     // ... Implementer findAll, findById, delete standard ...
     @Override public List<Consultation> findAll() { return new ArrayList<>(); }
-    @Override public Consultation findById(Long id) { return null; }
-    @Override public void update(Consultation c) {}
+    @Override
+    public Consultation findById(Long id) {
+        String sql = "SELECT * FROM Consultation WHERE idConsultation = ?";
+        try (Connection conn = SessionFactory.getInstance().getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setLong(1, id);
+            try (ResultSet rs = ps.executeQuery()) {
+                if(rs.next()) return RowMappers.mapConsultation(rs);
+            }
+        } catch (SQLException e) { throw new RuntimeException(e); }
+        return null;
+    }
+
+    @Override
+    public void update(Consultation c) {
+        String sql = "UPDATE Consultation SET date=?, statut=?, observationMedecin=?, idRDV=? WHERE idConsultation=?";
+        try (Connection conn = SessionFactory.getInstance().getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setDate(1, Date.valueOf(c.getDate()));
+            ps.setString(2, c.getStatut());
+            ps.setString(3, c.getObservationMedecin());
+            ps.setLong(4, c.getIdRDV());
+            ps.setLong(5, c.getIdConsultation());
+            ps.executeUpdate();
+        } catch (SQLException e) { throw new RuntimeException(e); }
+    }
+
     @Override public void delete(Consultation c) {}
     @Override public void deleteById(Long id) {}
     @Override public List<Consultation> findByDate(LocalDate date) { return new ArrayList<>(); }

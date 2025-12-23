@@ -1,4 +1,4 @@
-package ma.dentalTech.repository.modules.ordonnance.impl.mySQL;
+/* package ma.dentalTech.repository.modules.ordonnance.impl.mySQL;
 
 import ma.dentalTech.conf.SessionFactory;
 import ma.dentalTech.entities.ordonnance.Prescription;
@@ -97,3 +97,4 @@ public class PrescriptionRepositoryImpl implements PrescriptionRepository {
         return list;
     }
 }
+ */

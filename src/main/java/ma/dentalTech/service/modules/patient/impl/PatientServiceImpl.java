@@ -1,4 +1,4 @@
-package ma.dentalTech.service.modules.patient.impl;
+/* package ma.dentalTech.service.modules.patient.impl;
 
 import ma.dentalTech.common.exceptions.ServiceException;
 import ma.dentalTech.entities.patient.Patient;
@@ -125,3 +125,5 @@ public class PatientServiceImpl implements PatientService {
         }
     }
 }
+
+ */
