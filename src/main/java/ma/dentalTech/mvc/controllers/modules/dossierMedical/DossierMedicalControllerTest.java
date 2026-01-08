@@ -10,7 +10,11 @@ import ma.dentalTech.mvc.controllers.modules.dossierMedical.api.RDVController;
 import ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation.ConsultationControllerImpl;
 import ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation.DossierMedicalControllerImpl;
 import ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation.InterventionMedecinControllerImpl;
+<<<<<<< HEAD
 //import ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation.RDVControllerImpl;
+=======
+import ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation.RDVControllerImpl;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 import ma.dentalTech.mvc.dto.dossierMedical.ConsultationDTO;
 import ma.dentalTech.mvc.dto.dossierMedical.InterventionMedecinDTO;
 import ma.dentalTech.mvc.dto.dossierMedical.RDVDTO;
@@ -20,11 +24,19 @@ import ma.dentalTech.repository.modules.dossierMedical.impl.mySQL.RDVRepositoryI
 import ma.dentalTech.service.modules.dossierMedical.api.ConsultationService;
 import ma.dentalTech.service.modules.dossierMedical.api.DossierMedicalService;
 import ma.dentalTech.service.modules.dossierMedical.api.InterventionMedecinService;
+<<<<<<< HEAD
 //import ma.dentalTech.service.modules.dossierMedical.api.RDVService;
 import ma.dentalTech.service.modules.dossierMedical.impl.ConsultationServiceImpl;
 import ma.dentalTech.service.modules.dossierMedical.impl.DossierMedicalServiceImpl;
 import ma.dentalTech.service.modules.dossierMedical.impl.InterventionMedecinServiceImpl;
 //import ma.dentalTech.service.modules.dossierMedical.impl.RDVServiceImpl;
+=======
+import ma.dentalTech.service.modules.dossierMedical.api.RDVService;
+import ma.dentalTech.service.modules.dossierMedical.impl.ConsultationServiceImpl;
+import ma.dentalTech.service.modules.dossierMedical.impl.DossierMedicalServiceImpl;
+import ma.dentalTech.service.modules.dossierMedical.impl.InterventionMedecinServiceImpl;
+import ma.dentalTech.service.modules.dossierMedical.impl.RDVServiceImpl;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -32,7 +44,11 @@ import java.util.Random;
 
 public class DossierMedicalControllerTest {
 
+<<<<<<< HEAD
     //private static RDVService rdvService;
+=======
+    private static RDVService rdvService;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
     private static ConsultationService consultationService;
     private static InterventionMedecinService interventionService;
     private static DossierMedicalService dossierMedicalService;
@@ -82,7 +98,11 @@ public class DossierMedicalControllerTest {
     private static void initialiserControllers() {
         System.out.println("[INIT] Initialisation des services et controllers...");
 
+<<<<<<< HEAD
         //rdvService = new RDVServiceImpl(new RDVRepositoryImpl());
+=======
+        rdvService = new RDVServiceImpl(new RDVRepositoryImpl());
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
         consultationService = new ConsultationServiceImpl();
         interventionService = new InterventionMedecinServiceImpl(new InterventionMedecinRepositoryImpl());
 
@@ -94,7 +114,11 @@ public class DossierMedicalControllerTest {
                 )
         );
 
+<<<<<<< HEAD
         //rdvController = new RDVControllerImpl(rdvService);
+=======
+        rdvController = new RDVControllerImpl(rdvService);
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
         consultationController = new ConsultationControllerImpl(consultationService);
         interventionController = new InterventionMedecinControllerImpl(interventionService);
         dossierMedicalController = new DossierMedicalControllerImpl(dossierMedicalService);

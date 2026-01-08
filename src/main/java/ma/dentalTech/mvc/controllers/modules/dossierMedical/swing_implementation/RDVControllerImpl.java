@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /**package ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation;
+=======
+package ma.dentalTech.mvc.controllers.modules.dossierMedical.swing_implementation;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -244,4 +248,8 @@ public class RDVControllerImpl implements RDVController {
                 return statut.name();
         }
     }
+<<<<<<< HEAD
 }**/
+=======
+}
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe

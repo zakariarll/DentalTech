@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /**package ma.dentalTech.mvc.ui.modules.dossierMedical;
+=======
+package ma.dentalTech.mvc.ui.modules.dossierMedical;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 
 import ma.dentalTech.mvc.dto.dossierMedical.RDVDTO;
 
@@ -147,4 +151,8 @@ public class RDVView {
                     JOptionPane.ERROR_MESSAGE);
         });
     }
+<<<<<<< HEAD
 }**/
+=======
+}
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe

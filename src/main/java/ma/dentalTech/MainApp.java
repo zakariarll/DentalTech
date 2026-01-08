@@ -3,9 +3,12 @@ package ma.dentalTech;
 
 import ma.dentalTech.conf.ApplicationContext;
 import ma.dentalTech.mvc.controllers.modules.patient.api.PatientController;
+<<<<<<< HEAD
 import ma.dentalTech.mvc.ui.modules.RDVPatient.RDVView;
 
 import javax.swing.*;
+=======
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 
 public class MainApp
 {
@@ -13,6 +16,7 @@ public class MainApp
     {
         var cont = ApplicationContext.getBean(PatientController.class);
         cont .showRecentPatients();
+<<<<<<< HEAD
 
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("DentalTech - Gestion Cabinet");
@@ -25,5 +29,7 @@ public class MainApp
 
             frame.setVisible(true);
         });
+=======
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
     }
 }

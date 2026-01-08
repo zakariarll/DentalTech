@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /** package ma.dentalTech.service.modules.dossierMedical;
+=======
+package ma.dentalTech.service.modules.dossierMedical;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
 
 import ma.dentalTech.common.exceptions.ServiceException;
 import ma.dentalTech.common.exceptions.ValidationException;
@@ -22,7 +26,11 @@ import java.util.List;
 
 public class DossierMedicalModuleServiceTest {
 
+<<<<<<< HEAD
    // private static RDVService rdvService;
+=======
+    private static RDVService rdvService;
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
     private static ConsultationService consultationService;
     private static InterventionMedecinService interventionService;
     private static int testsReussis = 0;
@@ -68,7 +76,11 @@ public class DossierMedicalModuleServiceTest {
         afficherResultats();
     }
 
+<<<<<<< HEAD
    private static void initialiserServices() {
+=======
+    private static void initialiserServices() {
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
         System.out.println("[INIT] Initialisation des services...");
         rdvService = new RDVServiceImpl(new RDVRepositoryImpl());
         consultationService = new ConsultationServiceImpl(new ConsultationRepositoryImpl());
@@ -618,4 +630,8 @@ public class DossierMedicalModuleServiceTest {
         }
         System.out.println("======================================================================");
     }
+<<<<<<< HEAD
 }**/
+=======
+}
+>>>>>>> 37fab912b4240d8bf2646010128878e13d435ebe
